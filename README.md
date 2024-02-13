@@ -30,7 +30,7 @@ pendekatan pembelajaran mesin (Machine Learning) untuk memprediksi kemungkinan t
 2. Mengevaluasi kinerja model menggunakan metrik evaluasi yang sesuai untuk memastikan akurasi dan keandalan model.
 
 ### Solution Statements
-1. Mengimplementasikan algoritma KNN dan Decision Tree untuk membangun model prediksi penyakit gagal jantung.
+1. Mengimplementasikan algoritma KNN, Logistic Regression dan Decision Tree untuk membangun model prediksi penyakit gagal jantung.
 2. Melakukan pemrosesan data yang sesuai, termasuk penskalaan fitur dan penanganan missing value (jika ditemukan).
 3. Melakukan pelatihan model menggunakan kedua algoritma dengan menggunakan data yang sudah dipisah menjadi data latih dan data uji.
 4. Mengevaluasi kinerja kedua model dengan metrik evaluasi seperti akurasi, presisi, recall, dan f1 score.
@@ -55,3 +55,6 @@ Proyek ini menggunakan dataset 'Heart Failure Prediction' yang dapat diunduh di 
 10. **Oldpeak** : Depresi segmen T (Nilai numerik diukur dalam depresi)
 11. **ST_Slope** : Kemiringan segmen ST latihan puncak (Up : Naik, Flat : Datar, Down : Turun)
 12. **HeartDisease** : Kelas keluaran (1: memiliki penyakit jantung, 0 : Normal)
+
+## Data Preparation
+
