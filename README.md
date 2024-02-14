@@ -23,7 +23,7 @@ pendekatan pembelajaran mesin (Machine Learning) untuk memprediksi kemungkinan t
 
 ### Problem Statement
 1. Bagaimana mengembangkan model prediksi berbasis machine learning untuk penyakit gagal jantung?.
-2. Bagaimana mengevaluasi model dan model terbaik pembelajaran mesin untuk memprediksi risiko penyakit gagal jantung?.
+2. Bagaimana mengevaluasi model dan memilih model terbaik pembelajaran mesin untuk memprediksi risiko penyakit gagal jantung?.
 
 ### Goals
 1. Mengembangkan model prediksi yang dapat mengidentifikasi individu dengan risiko tinggi terkena penyakit gagal jantung.
@@ -39,7 +39,7 @@ pendekatan pembelajaran mesin (Machine Learning) untuk memprediksi kemungkinan t
 Proyek ini menggunakan dataset 'Heart Failure Prediction' yang dapat diunduh di [link berikut](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)
 ### Berikut Informasi-Informasi yang terdapat dalam dataset :
 - Dataset Memiliki Format CSV (Comma-Separated Values).
-- Dataset memiliki 918 data observasi dengan 11 Features.
+- Dataset memiliki 918 data observasi dengan 12 Features.
 - Tidak ada Missing Values dan duplikasi dalam Dataset
 
 ### Variabel-Variabel yang terdapat dalam Dataset :
