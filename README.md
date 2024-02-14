@@ -144,5 +144,20 @@ Sedangkan F1 Score adalah nilai tengah dari precision dan recall. Nilai terbaik 
 Nilai F1 Score yang baik menandakan bahwa model klasifikasi kita punya precision dan recall yang baik  
 
 berikut merupakan hasil evaluasi matrix antara ketiga model yang digunakan
+![hasil](report_images/hasi.png)
 
+### Kesimpulan
+1. K-Nearest Neighbor (KNN):
+- Akurasi pada data uji sebesar 0.771 dan pada data latih sebesar 0.904, menunjukkan bahwa model memiliki kinerja yang baik dalam melakukan klasifikasi.
+- Precision, recall, dan F1 score juga cukup baik, meskipun tidak sebaik akurasi. Hal ini menunjukkan bahwa model KNN mampu mengklasifikasikan gagal jantung dengan baik namun dengan beberapa kekurangan dalam mengidentifikasi true positives.
+- Model ini memiliki kinerja yang stabil antara data uji dan data latih.
+2. Logistic Regression:
+- Akurasi pada data uji sebesar 0.805 dan pada data latih sebesar 0.864, menunjukkan bahwa model juga memiliki kinerja yang baik dalam melakukan klasifikasi.
+- Precision, recall, dan F1 score yang relatif tinggi menunjukkan bahwa model Logistic Regression mampu mengklasifikasikan gagal jantung dengan baik, dan mungkin lebih baik daripada KNN dalam hal ini.
+- Model ini juga memiliki kinerja yang stabil antara data uji dan data latih.
+3. Decision Tree:
+- Meskipun memiliki akurasi yang cukup tinggi pada data latih (1.000), akurasi pada data uji hanya sebesar 0.746. Hal ini menunjukkan kemungkinan adanya overfitting pada model terhadap data latih, yang menyebabkan performa yang buruk pada data uji.
+- Precision, recall, dan F1 score pada data uji juga menunjukkan kinerja yang lebih rendah dibandingkan dengan KNN dan Logistic Regression.
+- Model Decision Tree cenderung tidak generalisasi dengan baik terhadap data yang tidak terlihat sebelumnya.
 
+Dari hasil tersebut, dapat disimpulkan bahwa model Logistic Regression mungkin merupakan pilihan terbaik di antara ketiga model untuk mengklasifikasikan risiko penyakit gagal jantung berdasarkan performa yang stabil dan tinggi pada data uji. Model KNN juga memiliki kinerja yang baik dan stabil, sementara model Decision Tree menunjukkan tanda-tanda overfitting dan tidak baik terhadap data baru.
