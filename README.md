@@ -22,8 +22,8 @@ tingkat kematian tinggi ini membutuhkan deteksi dini serta pengelolaan yang efek
 pendekatan pembelajaran mesin (Machine Learning) untuk memprediksi kemungkinan terjadinya penyakit gagal jantung berdasarkan data klinis pasien.
 
 ### Problem Statement
-1. Bagaimana mengidentifikasi faktor-faktor prediksi utama yang berkaitan dengan risiko penyakit gagal jantung?.
-2. Bagaimana mengembangkan dan mengevaluasi model pembelajaran mesin untuk memprediksi risiko penyakit gagal jantung?.
+1. Bagaimana mengembangkan model prediksi berbasis machine learning untuk penyakit gagal jantung?.
+2. Bagaimana mengevaluasi model dan model terbaik pembelajaran mesin untuk memprediksi risiko penyakit gagal jantung?.
 
 ### Goals
 1. Mengembangkan model prediksi yang dapat mengidentifikasi individu dengan risiko tinggi terkena penyakit gagal jantung.
@@ -31,7 +31,7 @@ pendekatan pembelajaran mesin (Machine Learning) untuk memprediksi kemungkinan t
 
 ### Solution Statements
 1. Mengimplementasikan algoritma KNN, Logistic Regression dan Decision Tree untuk membangun model prediksi penyakit gagal jantung.
-2. Melakukan pemrosesan data yang sesuai, termasuk penskalaan fitur dan penanganan missing value (jika ditemukan).
+2. Melakukan pemrosesan data yang sesuai, termasuk penskalaan fitur dan penanganan missing value dan outlier (jika ditemukan).
 3. Melakukan pelatihan model menggunakan kedua algoritma dengan menggunakan data yang sudah dipisah menjadi data latih dan data uji.
 4. Mengevaluasi kinerja kedua model dengan metrik evaluasi seperti akurasi, presisi, recall, dan f1 score.
 
@@ -40,7 +40,7 @@ Proyek ini menggunakan dataset 'Heart Failure Prediction' yang dapat diunduh di 
 ### Berikut Informasi-Informasi yang terdapat dalam dataset :
 - Dataset Memiliki Format CSV (Comma-Separated Values).
 - Dataset memiliki 918 data observasi dengan 11 Features.
-- Tidak ada Missing Values dalam Dataset
+- Tidak ada Missing Values dan duplikasi dalam Dataset
 
 ### Variabel-Variabel yang terdapat dalam Dataset :
 1. **Age** : Usia Pasien Dalam Tahun.
@@ -55,6 +55,10 @@ Proyek ini menggunakan dataset 'Heart Failure Prediction' yang dapat diunduh di 
 10. **Oldpeak** : Depresi segmen T (Nilai numerik diukur dalam depresi)
 11. **ST_Slope** : Kemiringan segmen ST latihan puncak (Up : Naik, Flat : Datar, Down : Turun)
 12. **HeartDisease** : Kelas keluaran (1: memiliki penyakit jantung, 0 : Normal)
+
+### Identifikasi Outlier Menggunakan Boxplot
+identifikasi outlier dilakukan untuk menganalisa outlier dalam setiap fitur numerik dalam dataset. penggunaan boxplot dapat memungkinkan kita
+untuk visualisasi distribusi nilai dalam setiap fitur dan identifikasi adanya nilai ekstrim atau outlier
 
 ## Data Preparation
 
